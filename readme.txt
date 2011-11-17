@@ -56,7 +56,32 @@ Just wrap your code in `[sourcecode language="biferno"]`your code here `[/source
 or
 wrap your code in `[biferno]`, such as `[biferno]` code here `[/biferno]` .
 
-The shortcodes accept a wide variety of parameters. For details, see the bottom of the SyntaxHighlighter Evolved's settings page.
+The shortcodes accept a wide variety of parameters here are a few examples taken from the SyntaxHighlighter Evolved's settings page.
+
+###Shortcode Parameters###
+These are the parameters you can pass to the shortcode and what they do. For the booleans (i.e. on/off), pass **true**/**1** or **false**/**0**.
+
+- **`lang`** or **`language`** Ñ The language syntax to highlight with. You can alternately just use that as the tag, such as `[biferno]code[/biferno]`. Click [here](http://alexgorbatchev.com/SyntaxHighlighter/manual/brushes/) for a list of valid tags (under "aliases").
+- **`autolinks`** Ñ Toggle automatic URL linking.
+- **`classname`** Ñ Add an additional CSS class to the code box.
+- **`collapse`** Ñ Toggle collapsing the code box by default, requiring a click to expand it. Good for large code posts.
+- **`firstline`** Ñ An interger specifying what number the first line should be (for the line numbering).
+- **`gutter`** Ñ Toggle the left-side line numbering.
+- **`highlight`** Ñ A comma-sperated list of line numbers to highlight. You can also specify a range. Example: 2,5-10,12
+- **`htmlscript`** Ñ Toggle highlighting any extra HTML/XML. Good for when you're mixing HTML/XML with another language, such as having Biferno script inside an HTML web page. This only works with Biferno and certain other languages.
+- **`light`** Ñ Toggle light mode which disables the gutter and toolbar all at once.
+- **`padlinenumbers`** Ñ Controls line number padding. Valid values are **false** (no padding), **true** (automatic padding), or an integer (forced padding).
+- **`title`** (v3 only) Ñ Sets some text to show up before the code. Very useful when combined with the **`collapse`** parameter.
+- **`toolbar`** Ñ Toggle the toolbar (buttons in v2, the about question mark in v3)
+- **`wraplines`** (v2 only) Ñ Toggle line wrapping.
+
+Some example shortcodes:
+
+- `[biferno]your code here[/biferno]`
+- `[code lang="biferno"]your code here[/code]`
+- `[sourcecode language="biferno" autolinks="false" classname="myclass" collapse="false" firstline="1" gutter="true" highlight="1-3,6,9" htmlscript="true" light="false" padlinenumbers="false" smarttabs="true" tabsize="4" toolbar="true" title="example-filename.bfr"]your code here[/css]`
+
+
 
 == Frequently Asked Questions ==
 
